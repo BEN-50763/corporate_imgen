@@ -1,0 +1,31 @@
+{
+  "env": {
+    "ENABLE_TOOL_SEARCH": "true",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash",
+      "WebFetch",
+      "mcp__serena",
+      "mcp__exa",
+      "mcp__Playwright",
+      "WebSearch",
+      "mcp__plugin_context7_context7",
+      "mcp__claude_ai_Notion",
+      "mcp__notion",
+      "mcp__linear-server",
+      "mcp__playwright",
+      "mcp__Ref__ref_search_documentation",
+      "mcp__Ref__ref_read_url"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": []
+      }
+    ]
+  },
+  "plansDirectory": "./plans"
+}

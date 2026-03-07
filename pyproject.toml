@@ -1,0 +1,26 @@
+[project]
+name = "corporate-imgen"
+version = "0.1.0"
+description = "Corporate image generation MCP server"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.26.0",
+    "openai>=1.60.0",
+    "Pillow>=11.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+corporate-imgen = "corporate_imgen.server:main"
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["corporate_imgen", "corporate_imgen.providers"]
+
+[tool.setuptools.package-dir]
+corporate_imgen = "src"
+"corporate_imgen.providers" = "src/providers"
