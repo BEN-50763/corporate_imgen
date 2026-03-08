@@ -209,4 +209,9 @@ marimo/_lsp/
 __marimo__/
 
 plans/
-.claude/skills/
+.claude/
+taskdocs/
+.playwright-mcp/
+.ruff_cache/
+*.code-workspace
+*modularity.md
